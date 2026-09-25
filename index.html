@@ -14,24 +14,33 @@
   </head>
   <body>
     <section>
-      <div class="listContainer">
+      <div class="cardContainer">
         <h1>My Tasks</h1>
         <p>Stay organized and productive</p>
-        <div>
-          <input type="text" name="" id="inputText" /><button id="addBtn">
-            Add Task
-          </button>
+        <div class="inputDiv">
+          <input
+            type="text"
+            name=""
+            id="inputText"
+            placeholder="What needs to be done?"
+          /><button id="addBtn">Add Task</button>
         </div>
-        <div>
-          <ul>
-            <li>Instagram post bedenken</li>
+        <div class="listContainer">
+          <ul id="unorderList">
+            <li class="eachList">
+              <div class="textDiv">
+                <input type="checkbox" name="" id="" /> Instagram post bedenken
+              </div>
+              <button id="delBtn" class="delBtn">Delete</button>
+            </li>
           </ul>
         </div>
-        <div>
+        <div class="lastDiv">
           <div>3 tasks</div>
           <div>0 completed</div>
         </div>
       </div>
     </section>
+    <script src="./script.js"></script>
   </body>
 </html>
